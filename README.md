@@ -10,6 +10,8 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+The data store is just a few json files, to act as a crude proof-of-concept, which are included in this repo for convenience.
+
 Login with one of the following users:
 
 ### Test Users
