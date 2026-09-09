@@ -35,7 +35,7 @@ Login with one of the following users:
   - the built-in api routing
   - server-side by default, keeps js footprint in browser smaller, easy to implement and protect data
   - convenient layout functionality makes applying a layout to multiple pages easy (could have nested re-usable layouts, but didn't really need that for this)
-  - server actions are a very convenient way to make server requests from the client, and allowing click-through to definition/implementer across client in the IDE is pretty neat
+  - server actions are a very convenient way to make server requests from the client, and allowing click-through to definition/implementer between client and server functions in the IDE is pretty neat
   - private components helps keep specially purposed components from "accidentally" being used in inappropriate places
   - "use cache" makes caching simple. Quite slick.
 - I initially tried using crudcrud.com for data, but they were having intermittent unavailability (500 status errors), so I re-implemented the data-store using locally stored json files (committed in repo). Obviously not something for production.
