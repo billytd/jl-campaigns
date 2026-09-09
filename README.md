@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) demo project by Billy Flaherty that allows users to login, view, create and update ad campaigns. It focuses on leveraging Next.js's app router functionality as an exercise to deomonstrate it's ability and the author's grasp of it's capabilities.
 
 ## Getting Started
 
@@ -6,31 +6,47 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Login with one of the following users:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Test Users
 
-## Learn More
+- Lashay McLaughlan
+  - email: l.mclaughlan@example.com
+  - pass: testingLM123
+  - role: normal
+- Edmundo Power
+  - email: e.power@example.com
+  - pass: testingEP123
+  - role: normal
+- Kristin Quinlan
+  - email: k.quinlan@example.com
+  - pass: testingKQ123
+  - role: admin
 
-To learn more about Next.js, take a look at the following resources:
+## Development Decisions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- I used app router for many of the built in conveniences, such as:
+  - the built-in api routing
+  - server-side by default, keeps js footprint in browser smaller, easy to implement and protect data
+  - convenient layout functionality makes applying a layout to multiple pages easy (could have nested re-usable layouts, but didn't really need that for this)
+  - private components helps keep specially purposed components from "accidentally" being used in inappropriate places
+  - "use cache" makes caching simple. Quite slick.
+- I initially tried using crudcrud.com for data, but they were having intermittent unavailability (500 status errors), so I re-implemented the data-store using locally stored json files (committed in repo). Obviously not something for production.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Would Implement For "Real" Production Application:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- full authentication and session management
+  - more robust/centralized authorization handling
+- pagination of campaigns on the dashboard
+- filtering and search of campaigns
+- probably wouldn't use a cookie to store the user token
+- unit tests
+- made more use of private components
+- would have spent more time organizing / breaking up server.ts
+- would like a nicer UI lib
+  - Mantine looks like fun to explore
+- a database
