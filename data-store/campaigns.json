@@ -1,0 +1,181 @@
+[
+  {
+    "name": "Mouse Ad Blitz 2",
+    "budget": 8500,
+    "start": "2026-09-08",
+    "end": "2026-09-22",
+    "owner": "Lashay McLaughlan",
+    "age": [
+      "40-64",
+      "30-39",
+      "20-29"
+    ],
+    "gender": [
+      "Female",
+      "Other / Non-Binary",
+      "Male"
+    ],
+    "country": "United States",
+    "state": "California",
+    "city": "",
+    "zip": "",
+    "publishers": [
+      "Hulu",
+      "Discovery",
+      "ABC"
+    ],
+    "devices": [
+      "CTV"
+    ],
+    "_id": "d00ed7dc-6da1-4b23-bcde-b9909343c5a8",
+    "ownerId": "89b487f7-01d8-4593-9ecd-4e582c4e87bb"
+  },
+  {
+    "name": "Dance of the Moose",
+    "budget": 50000,
+    "start": "2026-09-09",
+    "end": "2026-09-14",
+    "owner": "Lashay McLaughlan",
+    "age": [
+      "65+"
+    ],
+    "gender": [
+      "Female",
+      "Male",
+      "Other / Non-Binary"
+    ],
+    "country": "United States",
+    "state": "California",
+    "city": "",
+    "zip": "",
+    "publishers": [
+      "TLC",
+      "A&E"
+    ],
+    "devices": [
+      "CTV",
+      "Web Browser"
+    ],
+    "_id": "021ac309-9362-4822-a4dd-b2190011f8a8",
+    "ownerId": "89b487f7-01d8-4593-9ecd-4e582c4e87bb"
+  },
+  {
+    "name": "Kangaroo Hopping Affair",
+    "budget": 24000,
+    "start": "2026-09-09",
+    "end": "2026-09-22",
+    "age": [
+      "20-29",
+      "30-39"
+    ],
+    "gender": [
+      "Female"
+    ],
+    "country": "United States",
+    "state": "California",
+    "city": "",
+    "zip": "",
+    "publishers": [
+      "A&E"
+    ],
+    "devices": [
+      "Web Browser"
+    ],
+    "_id": "fa12c0a3-48a6-4221-a360-73029ae6b152",
+    "ownerId": "6cded5a2-71d0-4ea0-9bbd-aed7cc901790",
+    "owner": "Kristin Quinlan"
+  },
+  {
+    "name": "The Meerkat Hypothesis",
+    "budget": 4000,
+    "start": "2026-09-09",
+    "end": "2026-09-16",
+    "age": [
+      "20-29",
+      "10-14"
+    ],
+    "gender": [
+      "Female",
+      "Male",
+      "Other / Non-Binary"
+    ],
+    "country": "United States",
+    "state": "California",
+    "city": "",
+    "zip": "",
+    "publishers": [
+      "Fox News",
+      "TLC",
+      "A&E"
+    ],
+    "devices": [
+      "CTV",
+      "Mobile Device"
+    ],
+    "_id": "d00651b7-4813-402e-964d-7302c26aec4e",
+    "ownerId": "d83de9eb-7e96-426a-964c-4a7d9a90df79",
+    "owner": "Edmundo Power"
+  },
+  {
+    "name": "You get an Ocelot!",
+    "budget": 9995,
+    "start": "2026-09-09",
+    "end": "2026-09-16",
+    "age": [
+      "20-29",
+      "0-5",
+      "6-9",
+      "40-64",
+      "65+"
+    ],
+    "gender": [
+      "Female",
+      "Other / Non-Binary",
+      "Male"
+    ],
+    "country": "United States",
+    "state": "California",
+    "city": "",
+    "zip": "",
+    "publishers": [
+      "A&E",
+      "Discovery"
+    ],
+    "devices": [
+      "CTV"
+    ],
+    "_id": "e12bb03a-8bf0-49c9-a072-bc6888296f22",
+    "ownerId": "6cded5a2-71d0-4ea0-9bbd-aed7cc901790",
+    "owner": "Kristin Quinlan"
+  },
+  {
+    "name": "The Monkey Menace",
+    "budget": 12400,
+    "start": "2026-09-09",
+    "end": "2026-09-16",
+    "age": [
+      "20-29",
+      "0-5",
+      "6-9",
+      "40-64"
+    ],
+    "gender": [
+      "Female"
+    ],
+    "country": "United States",
+    "state": "California",
+    "city": "",
+    "zip": "",
+    "publishers": [
+      "ABC",
+      "A&E"
+    ],
+    "devices": [
+      "Mobile Device",
+      "CTV"
+    ],
+    "_id": "4e0e4064-c946-4ca1-8cfe-82c20f310841",
+    "ownerId": "6cded5a2-71d0-4ea0-9bbd-aed7cc901790",
+    "owner": "Kristin Quinlan"
+  }
+]

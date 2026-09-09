@@ -1,0 +1,12 @@
+.campaign-page-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  align-items: start;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .campaign-page-layout {
+    grid-template-columns: 1fr;
+  }
+}

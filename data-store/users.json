@@ -1,0 +1,23 @@
+[
+    {
+        "_id": "89b487f7-01d8-4593-9ecd-4e582c4e87bb",
+        "name": "Lashay McLaughlan",
+        "email": "l.mclaughlan@example.com",
+        "password": "$argon2id$v=19$m=19456,p=1,t=2$knOFhgi1WTj5Y90qsnFR0w$gW1QFYhCwpTe+7gRCPDy+GWRROakfn4kRk+m9hXpyrE",
+        "role": "normal"
+    },
+    {
+        "_id": "6cded5a2-71d0-4ea0-9bbd-aed7cc901790",
+        "name": "Kristin Quinlan",
+        "email": "k.quinlan@example.com",
+        "password": "$argon2id$v=19$m=19456,p=1,t=2$tRBFc7xqJzaBU+7QJtVdrw$kRqozkKP4rtysQVquvYCOfCAv8vWxi2IUv2rJi3EFdM",
+        "role": "admin"
+        },
+    {
+        "_id": "d83de9eb-7e96-426a-964c-4a7d9a90df79",
+        "name": "Edmundo Power",
+        "email": "e.power@example.com",
+        "password": "$argon2id$v=19$m=19456,p=1,t=2$2W+EQQ+2RmEPyS90gOhOhQ$stI6Nxe7rcMvxwBrB/GGe1lrp6b5qcaySTEOMUi0v3E",
+        "role": "normal"
+        }
+]

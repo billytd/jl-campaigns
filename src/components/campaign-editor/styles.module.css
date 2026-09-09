@@ -1,0 +1,206 @@
+.campaign-editor-editor {
+  max-width: 930px;
+  margin: 0 auto;
+  color: var(--ink);
+}
+.campaign-editor-eyebrow {
+  margin: 0 0 15px;
+  color: var(--coral);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+.campaign-editor-editorHead {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.campaign-editor-editorHead h1 {
+  margin: 0;
+  font-size: 43px;
+  line-height: 1.03;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+}
+.campaign-editor-back {
+  justify-self: start;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 12px;
+}
+.campaign-editor-back:first-letter {
+  color: var(--coral);
+}
+.campaign-editor-successBanner {
+  padding: 12px 16px;
+  margin: 0 0 22px;
+  background: var(--mint);
+  color: #286c52;
+  font-size: 12px;
+}
+.campaign-editor-formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.campaign-editor-formGrid fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 25px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+.campaign-editor-formGrid fieldset:first-child {
+  grid-column: span 2;
+}
+.campaign-editor-formGrid legend {
+  margin-bottom: 22px;
+  padding: 0 7px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.campaign-editor-editor label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.campaign-editor-formGrid label + label {
+  margin-top: 17px;
+}
+.campaign-editor-editor input,
+.campaign-editor-editor select {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: #fbfdfb;
+  color: var(--ink);
+  padding: 12px 13px;
+  outline: none;
+  font:
+    14px var(--font-geist-sans),
+    sans-serif;
+}
+.campaign-editor-editor input:focus,
+.campaign-editor-editor select:focus {
+  border-color: var(--coral);
+}
+.campaign-editor-fieldHint {
+  float: right;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 400;
+}
+.campaign-editor-fieldLabel {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.campaign-editor-twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.campaign-editor-checkGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 11px;
+}
+.campaign-editor-check {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 9px !important;
+  padding: 10px;
+  background: var(--paper);
+  font-size: 12px !important;
+}
+.campaign-editor-check input {
+  accent-color: var(--coral);
+  width: 15px;
+  height: 15px;
+}
+.campaign-editor-submitBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+.campaign-editor-submitBar p {
+  color: var(--muted);
+  font-size: 11px;
+}
+.campaign-editor-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-height: 45px;
+  padding: 0 19px;
+  border: 0;
+  background: var(--ink);
+  color: #fff;
+  cursor: pointer;
+  font:
+    600 12px var(--font-geist-sans),
+    sans-serif;
+  letter-spacing: 0.02em;
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+.campaign-editor-primary span {
+  color: var(--mint);
+  font-size: 17px;
+}
+.campaign-editor-primary:hover {
+  background: var(--coral);
+  transform: translateY(-2px);
+}
+.campaign-editor-primary:disabled {
+  background: #c5ceca;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 700px) {
+  .campaign-editor-editorHead {
+    grid-template-columns: auto 1fr;
+    text-align: right;
+    gap: 15px;
+  }
+  .campaign-editor-editorHead > div:last-child {
+    display: none;
+  }
+  .campaign-editor-editorHead h1 {
+    font-size: 32px;
+  }
+  .campaign-editor-back span {
+    display: none;
+  }
+  .campaign-editor-formGrid {
+    grid-template-columns: 1fr;
+  }
+  .campaign-editor-formGrid fieldset:first-child {
+    grid-column: auto;
+  }
+  .campaign-editor-checkGrid {
+    grid-template-columns: 1fr;
+  }
+  .campaign-editor-submitBar {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .campaign-editor-submitBar .campaign-editor-primary {
+    width: 100%;
+  }
+}

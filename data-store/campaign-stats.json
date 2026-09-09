@@ -1,0 +1,20 @@
+[
+  {
+    "campaign-id": "d00ed7dc-6da1-4b23-bcde-b9909343c5a8",
+    "totalViewCount": 128430,
+    "costPerView": 0.045,
+    "hookRate": 0.624,
+    "videoCompletionRate": 0.781,
+    "viewThroughRate": 0.312,
+    "clickThroughRate": 0.021
+  },
+  {
+    "campaign-id": "021ac309-9362-4822-a4dd-b2190011f8a8",
+    "totalViewCount": 128430,
+    "costPerView": 0.045,
+    "hookRate": 0.624,
+    "videoCompletionRate": 0.781,
+    "viewThroughRate": 0.312,
+    "clickThroughRate": 0.021
+  }
+]

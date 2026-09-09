@@ -1,0 +1,120 @@
+.login-form-login {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: clamp(50px, 10vw, 150px);
+  min-height: 560px;
+}
+.login-form-loginIntro h1 {
+  max-width: 590px;
+  margin: 0 0 22px;
+  font-size: clamp(35px, 5vw, 62px);
+  line-height: 1.03;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+}
+.login-form-loginIntro h1 i {
+  color: var(--coral);
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+.login-form-loginIntro > p:last-child {
+  max-width: 350px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.login-form-eyebrow {
+  margin: 0 0 15px;
+  color: var(--coral);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+.login-form-loginCard {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  padding: 38px;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--coral);
+  background: var(--card);
+  box-shadow: 12px 14px 0 var(--mint);
+}
+.login-form-loginCard h2 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+}
+.login-form-loginCard label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.login-form-loginCard input {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: #fbfdfb;
+  color: var(--ink);
+  padding: 12px 13px;
+  outline: none;
+  font:
+    14px var(--font-geist-sans),
+    sans-serif;
+}
+.login-form-loginCard input:focus {
+  border-color: var(--coral);
+}
+.login-form-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-height: 45px;
+  padding: 0 19px;
+  border: 0;
+  background: var(--ink);
+  color: #fff;
+  cursor: pointer;
+  font:
+    600 12px var(--font-geist-sans),
+    sans-serif;
+  letter-spacing: 0.02em;
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+.login-form-primary span {
+  color: var(--mint);
+  font-size: 17px;
+}
+.login-form-primary:hover {
+  background: var(--coral);
+  transform: translateY(-2px);
+}
+.login-form-error {
+  margin: 0;
+  color: #c44639;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .login-form-login {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    min-height: 0;
+    padding: 35px 0;
+  }
+  .login-form-loginIntro h1 {
+    font-size: 42px;
+  }
+  .login-form-loginCard {
+    padding: 25px;
+    box-shadow: 7px 8px 0 var(--mint);
+  }
+}

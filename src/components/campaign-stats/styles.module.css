@@ -1,0 +1,67 @@
+.campaign-stats-panel {
+  align-self: start;
+  padding: 25px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+}
+.campaign-stats-subheader {
+  margin: 0 0 22px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.campaign-stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.campaign-stats-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.campaign-stats-row:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+.campaign-stats-row dt {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.campaign-stats-row dd {
+  margin: 0;
+  color: var(--ink);
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.campaign-stats-skeletonLabel,
+.campaign-stats-skeletonValue {
+  display: block;
+  height: 10px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #e7efeb 25%, #f4f8f5 50%, #e7efeb 75%);
+  background-size: 200% 100%;
+  animation: campaign-stats-shimmer 1.5s infinite;
+}
+.campaign-stats-skeletonLabel {
+  width: 60%;
+}
+.campaign-stats-skeletonValue {
+  width: 35%;
+  height: 16px;
+}
+
+@keyframes campaign-stats-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}

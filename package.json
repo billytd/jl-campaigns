@@ -9,6 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "argon2": "^0.45.1",
+    "jose": "^6.2.10",
     "next": "16.3.4",
     "react": "19.2.8",
     "react-dom": "19.2.8"
@@ -19,6 +21,10 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-check-file": "^3.3.2",
+    "lint-staged": "^17.4.1",
+    "prettier": "^3.9.6",
     "typescript": "^5"
   }
 }

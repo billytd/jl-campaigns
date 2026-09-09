@@ -1,0 +1,107 @@
+.site-shell-page {
+  --ink: #182322;
+  --muted: #73807c;
+  --line: #dfe7e3;
+  --paper: #f5f8f5;
+  --card: #fff;
+  --coral: #e96b4c;
+  --mint: #c9eadb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.site-shell-header {
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(24px, 5vw, 76px);
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.site-shell-brand,
+.site-shell-account button {
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.site-shell-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font:
+    600 15px var(--font-geist-sans),
+    sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.site-shell-brand b {
+  font-weight: 400;
+  color: var(--muted);
+}
+.site-shell-brandMark {
+  display: grid;
+  place-items: center;
+  width: 31px;
+  height: 31px;
+  background: var(--coral);
+  color: #fff;
+  font:
+    700 17px Georgia,
+    serif;
+  transform: rotate(-8deg);
+}
+.site-shell-account {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  font-size: 13px;
+}
+.site-shell-account small {
+  color: var(--coral);
+}
+.site-shell-account button {
+  padding: 0;
+  color: var(--muted);
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.site-shell-main {
+  width: min(1180px, calc(100% - 48px));
+  flex: 1;
+  margin: 0 auto;
+  padding: 68px 0 90px;
+}
+
+:global(footer) {
+  padding: 22px clamp(24px, 5vw, 76px);
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+:global(footer) :global(span) {
+  margin-left: 4px;
+  color: var(--ink);
+}
+
+@media (max-width: 700px) {
+  .site-shell-header {
+    height: 70px;
+  }
+  .site-shell-brand b {
+    display: none;
+  }
+  .site-shell-main {
+    width: calc(100% - 32px);
+    padding: 40px 0 60px;
+  }
+}
