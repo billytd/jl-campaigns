@@ -47,7 +47,7 @@ export async function POST(request: Request) {
         { message: 'Invalid campaign data.' },
         { status: 400 },
       );
-    const campaigns = await readCampaigns<Campaign>();
+    const campaigns = await readCampaigns();
     const campaign: Campaign = {
       ...body,
       _id: createId(),
