@@ -1,6 +1,5 @@
 'use server';
 
-/* eslint-disable no-console */
 import { getAuthorizedCampaign } from '@/lib/campaign-authorization';
 import { Campaign, CampaignFormData } from '@/lib/campaign.types';
 import { getCampaignStats } from '@/lib/campaign-stats';

@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { cookies } from 'next/headers';
 import { errors as joseErrors, jwtVerify, SignJWT } from 'jose';
 import { readUsers } from './data-store';

@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 'use client';
 
 import { SubmitEventHandler, useEffect, useState } from 'react';

@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { NextResponse } from 'next/server';
 import { createId, readCampaigns, writeCampaigns } from '@/lib/data-store';
 import {

@@ -1,6 +1,5 @@
 'use server';
 
-/* eslint-disable no-console */
 import argon2 from 'argon2';
 import { cookies } from 'next/headers';
 import { updateTag } from 'next/cache';
